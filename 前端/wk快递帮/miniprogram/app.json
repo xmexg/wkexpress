@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myserver/bookup_server/bookup_server",
+    "pages/myserver/network_server/network_server",
+    "pages/show/show",
+    "pages/books/books",
+    "pages/me/me",
+    "pages/booking/booking",
+    "pages/booked/booked",
+    "pages/delivering/delivering",
+    "pages/delivered/delivered",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00aeec",
+    "navigationBarTitleText": "阿超跑腿",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#00aeec",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/icon/home_0.png",
+        "selectedIconPath": "static/image/icon/home_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "iconPath": "static/image/icon/book_0.png",
+        "selectedIconPath": "static/image/icon/book_1.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/image/icon/me_0.png",
+        "selectedIconPath": "static/image/icon/me_1.png",
+        "text": "我"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

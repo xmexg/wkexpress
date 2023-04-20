@@ -1,0 +1,34 @@
+<!--pages/books/books.wxml-->
+<view id="top">
+  <view id="top_con">
+    <text>正在施工...</text>
+  </view>
+</view>
+
+<view id="content">
+  <view id="content_list">
+    <!-- wx:if="{{userty==1 || usrty==9}}" -->
+    <ul id="content_list_ul_manager" wx:for="{{orders}}" wx:key="orderid" wx:for-index="idx" bindsubmit="DeliveryOrder">
+      <li>
+        <text class="liid">{{item.orderid}}</text>
+        <text class="liordertype" wx:if="{{item.ordertype==0}}">需用户确认价格</text>
+        <text class="lipickup">{{item.pickup}}</text>
+        <text class="lipickdown">{{item.pickdown}}</text>
+        <text class="lipickinfo">{{item.pickname}}({{item.pickcode}})</text>
+        <text class="lipeopleinfo">{{item.name}}({{item.phone}})</text>
+        <text class="linote">{{item.note}}</text>
+        <input class="liinputprice" type="digit" placeholder="请设置取货价格" maxlength="3" confirm-type="done" data-chooseorderid="{{item.orderid}}" data-chooseorderloc="{{idx}}" bindinput="setDeliveryOrderPrice" />
+        <button class="lisubmit" type="primary" form-type="submit" data-deliverorderid="{{item.orderid}}" data-deliverorderprice="{{item.deliverorderprice}}" bindtap="DeliveryOrder">接取订单</button>
+        <text class="litime">{{item.ordertime}}</text>
+      </li>
+    </ul>
+    <!-- <ul id="content_list_ul_customer" wx:if="{{usrty!=1 && usrty!=9}}" wx:for="{{orders}}" wx:key="orderid">
+      <li bindtap="GetOrderDetail" data-chooseorderid="{{item.orderid}}">
+        <text class="liid">{{item.orderid}}</text>
+        <text class="lipickup">{{item.pickup}}</text>
+        <text class="lipickdown">{{item.pickdown}}</text>
+        <text class="litime">{{item.ordertime}}</text>
+      </li>
+    </ul> -->
+  </view>
+</view>

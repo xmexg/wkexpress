@@ -1,0 +1,14 @@
+<!--pages/me/me.wxml-->
+<view id="top">
+  <view id="top_con">
+    <text class="top_con_form" wx:for="{{mydata}}" wx:key="id"><text>{{item.name}}:{{item.value}}</text></text>
+  </view>
+</view>
+<view id="context">
+  <view id="content_list">
+    <ul wx:for="{{mydata}}" wx:key="id">
+      <li class="content_list_li">{{item.name}}</li>
+    </ul>
+    <text class="content_list_li" bindtap="goto_about">关于</text>
+  </view>
+</view>

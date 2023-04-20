@@ -1,0 +1,53 @@
+/* pages/me/me.wxss */
+#top{
+  position: fixed;
+  height: 20vh;
+  min-height: 100px;
+  max-height: 200px;
+  width: 100%;
+  background: linear-gradient(0deg,#fff,#00aeec);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#top_con{
+  width: 90%;
+  height: 90%;
+  background: rgba(245, 243, 242, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+.top_con_form{
+  width: 50%;
+  color: #00698f;
+}
+
+#content{
+  width: 100%;
+}
+
+#content_list{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top: 25vh;
+  height: 75vh;
+  overflow: scroll;
+  color: #1c5a70;
+}
+
+.content_list_li{
+  display: block;
+  margin: 5px 0;
+  padding: 10px 5px;
+  background: #f0fbff;
+  border-radius: 10px;
+}

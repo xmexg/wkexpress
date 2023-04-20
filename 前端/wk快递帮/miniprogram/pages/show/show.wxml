@@ -1,0 +1,11 @@
+<!--pages/show/show.wxml-->
+<text>pages/show/show.wxml</text>
+<view>
+  <view class="bottombar">
+    <ul class="bottombar-ul">
+      <li>取快递</li>
+      <li>查进度</li>
+      <li>关于</li>
+    </ul>
+  </view>
+</view>

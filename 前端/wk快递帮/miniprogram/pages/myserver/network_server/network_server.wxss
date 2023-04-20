@@ -1,0 +1,78 @@
+/* pages/bookup/bookup.wxss */
+#content{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #ebfffa;
+}
+
+#title{
+  width: 100vw;
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 2px 2px #ffffff;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: #1e2732;
+}
+
+#content_lay{
+  width: 90%;
+}
+
+#content li{
+  color: #1c5a70;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  margin: 5px 0;
+  background: #d5ebf2;
+  border-radius: 10px;
+}
+
+.usrInput{
+    color: #38b3e0;
+}
+
+#submit{
+  background: #00aeec;
+  transition: 100ms;
+}
+
+#submit:active{
+  background: #69d4fa;
+}
+
+#orderform{
+  background: #000;
+}
+
+#question{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#question text{
+  text-indent: 1em;
+  width: 90%;
+}
+
+.q{
+  color: #6741d9;
+  margin: 0.5em 0 0 0;
+}
+
+.a{
+  color: #00aeec;
+  margin: 0 0 0.5em 0;
+}
+
+.link{
+  text-decoration: underline solid #06436f ;
+}

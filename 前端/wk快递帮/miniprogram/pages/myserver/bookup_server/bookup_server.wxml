@@ -1,0 +1,55 @@
+<view id="content">
+  <text id="title">代取快递</text>
+  <view id="content_lay">
+    <form bindsubmit="formSubmit" bindreset="formReset" id="orderform">
+      <ul>
+        <li>
+          <text>快递点：</text>
+          <picker name="pickup" bindchange="Pick" value="{{PickListIndex}}" range="{{PickList}}">
+            <view class="usrInput">{{PickList[PickListIndex]}}</view>
+          </picker>
+        </li>
+        <li>
+          <text>姓名：</text>
+          <input name="name" class="usrInput" maxlength="10" placeholder="请输入您的姓名(可选)" />
+        </li>
+        <li>
+          <text>包裹名：</text>
+          <input name="pickname" class="usrInput" maxlength="20" placeholder="请输入您快递包裹上的网名" />
+        </li>
+        <li>
+          <text>送达点：</text>
+          <input name="pickdown" class="usrInput" maxlength="50" placeholder="请输入要送达的地点" />
+        </li>
+        <li>
+          <text>取货码(若多个取货码请分开提交)：</text>
+          <input name="pickcode" class="usrInput" maxlength="60" placeholder="请输入提货码" />
+        </li>
+        <li>
+          <text>手机号：</text>
+          <input name="phone" class="usrInput" type="number" maxlength="11" placeholder="请输入您的手机号" />
+        </li>
+        <li>
+          <text>取货价格确认：</text>
+          <text id="priceinfo">(小件1元,中件1.5-2.5元,大件3元+)</text>
+          <radio-group name="ordertype" class="usrInput" id="ordertype">
+            <label>
+              <radio value="1" checked="true">直接付款</radio>
+            </label>
+            <text>\n</text>
+            <label>
+              <radio value="0">确认价格后付款</radio>
+            </label>
+          </radio-group>
+        </li>
+        <li>
+          <text>添加备注:</text>
+          <textarea name="note" maxlength="100" id="note" class="usrInput" placeholder="请在此处添加一段备注(可选)"></textarea>
+        </li>
+        <li>
+          <button id="submit" type="primary" form-type="submit">提交信息</button>
+        </li>
+      </ul>
+    </form>
+  </view>
+</view>

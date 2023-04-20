@@ -1,0 +1,114 @@
+/* pages/books/books.wxss */
+#top{
+  position: fixed;
+  height: 20vh;
+  min-height: 100px;
+  max-height: 200px;
+  width: 100%;
+  background: linear-gradient(0deg,#fff,#00aeec);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#top_con{
+  width: 90%;
+  height: 90%;
+  background: rgba(245, 243, 242, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+#top_con text{
+  color: #00aeec;
+}
+
+#content{
+  width: 100%;
+  height: 100vh;
+  /* background: #000; */
+}
+
+#content_list{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top: 25vh;
+  height: 75vh;
+  overflow: scroll;
+  color: #1c5a70;
+}
+
+#content_list li{
+  position: relative;
+  display: block;
+  margin: 5px 0;
+  /* padding: 10px 0; */
+  background: #f0fbff;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#content_list li text{
+  margin: 2px 0px;
+  display: block;
+  width: 100%;
+  /* background: #000; */
+}
+
+.liid{
+  position: relative;
+  top: 0px;
+  font-size: 0.7em;
+  color: #868e96;
+}
+
+.liordertype{
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  font-size: 0.7em;
+  color: #c92a2a;
+}
+
+.lipickup{
+  position: relative;
+  left: 5%;
+  width: 95%;
+  border-left: #007aa6 3px solid;
+}
+
+.lipickdown{
+  position: relative;
+  left: 6%;
+  width: 94%;
+  border-left: #a6559d 3px solid;
+}
+
+.lipeopleinfo{
+  color: #85a2ff;
+}
+
+.lisubmit{
+  transition: 100ms;
+}
+
+.lisubmit:active{
+  background: #69d4fa;
+}
+
+.litime{
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 0.7em;
+  color: #868e96;
+}

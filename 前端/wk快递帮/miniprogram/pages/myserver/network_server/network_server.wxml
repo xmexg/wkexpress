@@ -1,0 +1,60 @@
+<view id="content">
+  <text id="title">办校园网</text>
+  <view id="content_lay">
+    <form bindsubmit="formSubmit" bindreset="formReset" id="orderform">
+      <ul>
+        <li>
+          <text>办网类型:</text>
+          <radio-group name="Bustype" class="radiogroup" id="Bustypechoose">
+            <label>
+              <radio value="0" checked="true">新用户办网</radio>
+            </label>
+            <text>\n</text>
+            <label>
+              <radio value="1">老用户续费</radio>
+            </label>
+          </radio-group>
+        </li>
+        <li>
+          <text>姓名:</text>
+          <input name="name" class="usrInput" maxlength="10" placeholder="请输入您的姓名" />
+        </li>
+        <li>
+          <text>校园移动卡手机号:</text>
+          <input name="phone" class="usrInput" maxlength="20" placeholder="请输入您的手机号" />
+        </li>
+        <li>
+          <text>学号:</text>
+          <input name="stunumber" class="usrInput" type="number" maxlength="11" placeholder="请输入您的学号" />
+        </li>
+        <li>
+          <text>身份证号:</text>
+          <input name="identitycard" class="usrInput" type="idcard" maxlength="60" placeholder="请输入您的身份证号" />
+        </li>
+        <li>
+          <text>院系:</text>
+          <input name="department" class="usrInput" maxlength="11" placeholder="请输入您所在院系" />
+        </li>
+        <li>
+          <text>办理时长:</text>
+          <picker name="" bindchange="Burdurchange" value="{{BusdurIndex}}" range="{{Busdur}}">
+            <view class="usrInput">{{Busdur[BusdurIndex]}}</view>
+          </picker>
+        </li>
+        <li>
+          <button id="submit" type="primary" form-type="submit">提交信息</button>
+        </li>
+      </ul>
+    </form>
+  </view>
+  <view id="question">
+    <text class="q">校园网默认的账号和密码</text>
+    <text class="a">默认情况下,校园网老用户账号是手机号,新用户账号是学号;密码是身份证后六位</text>
+    <text class="q">办理后多久可使用?</text>
+    <text class="a">1到2个工作日(不包含周六和周日)</text>
+    <text class="q">新老用户价格不同,我可以借差价吗?</text>
+    <text class="a">这样会办理失败且费用不会原路返回,请联系我们进行退款</text>
+    <text class="q">如何联系我们?</text>
+    <text class="a link" bindtap="goto_about">查看"我"-"关于"-"联系我们"(点击此处跳转)</text>
+  </view>
+</view>

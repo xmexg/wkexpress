@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "ES2020",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "lib": ["ES2020","DOM"],
+    "typeRoots": [
+      "./typings"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+, "miniprogram/pages/index/index.js", "miniprogram/pages/books/books.js", "miniprogram/utils/Login.js", "miniprogram/pages/me/me.js", "miniprogram/pages/server/bookup.js", "miniprogram/pages/myserver/bookup_server.js", "miniprogram/pages/myserver/network_server/network_server.js" ],
+  "exclude": [
+    "node_modules"
+  ]
+}

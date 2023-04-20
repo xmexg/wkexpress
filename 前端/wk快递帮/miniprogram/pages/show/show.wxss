@@ -1,0 +1,28 @@
+/* pages/show/show.wxss */
+
+
+.bottombar{/*底栏*/
+  position: absolute;
+  bottom: 0.5em;
+  width: 95vw;
+  height: auto;/*由内容撑大高度*/
+  background-color: rgba(154, 167, 177, 0.5);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row;/*方向水平向左*/
+  flex-wrap: nowrap;/*不换行*/
+  justify-content: space-around;/*每个项目两侧的间距相等*/
+  align-items: flex-start;/*交叉轴的起点对齐*/
+}
+
+.bottombar-ul{
+  margin: 0.5em 0em 0.5em 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottombar-ul li{
+  max-width: 30%;
+}
